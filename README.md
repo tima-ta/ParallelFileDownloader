@@ -10,20 +10,20 @@ A high-performance, multi-threaded file downloader implemented in Java that effi
 - Error Resilience: Gracefully handles network errors and invalid URLs
 - Organized Downloads: Saves files to a dedicated downloads directory on the desktop
 
-Core Components:
-## Thread Pool Executor (FileDownloader class)
+## Core Components:
+#### Thread Pool Executor (FileDownloader class)
 
 Creates a fixed thread pool to manage concurrent downloads
 Efficiently reuses threads to avoid creation/destruction overhead
 Implements work stealing - threads automatically pick next available download
 
-## HTTP Downloader (HttpDownloader class)
+#### HTTP Downloader (HttpDownloader class)
 
 Uses HttpURLConnection for robust file downloads
 Auto-detects file extensions from Content-Type headers
 Implements buffered I/O for optimal performance
 
-## Input Parser (FilesURLSParser class)
+#### Input Parser (FilesURLSParser class)
 
 Validates URLs using regex pattern matching
 Handles duplicate URLs and empty lines
