@@ -44,7 +44,9 @@ Make utility (for build automation)
    make run
    ```
    To set the number of threads you want
-   ```make run ARGS="--threadsCount=5"```
+   ```
+   make run ARGS="--threadsCount=5"
+   ```
 
 
 # Makefile Commands
